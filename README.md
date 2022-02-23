@@ -31,4 +31,9 @@
   - 정렬하기  행 단위 정렬 : asix = 0 
 	     컬럼 단위 정렬 : asix = 1 뒤에 Ascending = True일 경우 오름차순 False인 경우 내림차순
   - 데이터 합치기 : 열과 행의 갯수가 같을 때 사용
-  
+
+### 3일차 
+  - 빈도교차분석
+   - 빈도분석 : tips["day"].values_counts( )
+   - 교차분석 : pd.crosstab(tips["sex"],tips["day"])
+   - 결측치 처리
