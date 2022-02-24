@@ -94,13 +94,13 @@
   - 행번호만 조회하기
    - np.where((함수로 만들었던 것))
 
-  - # 이상치가 아닌 값만 추출...
+  - #### 이상치가 아닌 값만 추출...
     
     #### 아닌 값 따로 저장하기..
 
     #age_non_outlier_index = [ ]
 
-  - # 이상치 인덱스가 아닌 정상 인덱스만 추출하기..
+  - #### 이상치 인덱스가 아닌 정상 인덱스만 추출하기..
     
     #for idx in df_drop_allrow.index :
     ####    if idx not in age_outlier_index[0]:
