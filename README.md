@@ -41,14 +41,14 @@
 ### 4일차 
   
   - 이상치 처리하기
-   -  drop = True
+    -  drop = True
   -  boxplot 그리기
   
   - 라이브러리 가져오기
      #import matplotlib as mpl
      #import matplotlib.pylab as plt
    
-  - 그리기  
+    - 그리기  
      #plt.boxplot(데이터프레임["컬럼명"])
      #plt.show( )
   
@@ -56,15 +56,15 @@
       #데이터프레임["컬럼명"].describe( )
   
   - 최대값/최소값 계산하기
-   - np.percentile(데이터프레임["데이터명"], [%값,%값] )
+    - np.percentile(데이터프레임["데이터명"], [%값,%값] )
   
   - iqr값 계산하기 
       #iqr = q3 - q1
-   - 최대값 : q1 - (iqr * 1.5)
-   - 최대값 : q3 +(iqr * 1.5)
+   - 최대값 : q1 - (iqr * 1.5), 최대값 : q3 +(iqr * 1.5)
 
   - 함수로 만들기 
-   - def
+   - def (함수 정의하기)
+    
     #def outliers_iqr( ): 
     #q1, q3 = np.percentile(df_drop_allrow["나이"], [25, 75])
     
@@ -92,7 +92,7 @@
     #outliers_iqr( )
  
   - 행번호만 조회하기
-   - np.where((함수로 만들었던 것))
+    - np.where((함수로 만들었던 것))
 
   - #### 이상치가 아닌 값만 추출...
     
@@ -109,5 +109,39 @@
     age_non_outlier_index
 
   - 인덱스 번호 재배열 후 최종결과물 변수에 자장하고 조회
-   - #df_new = df_new.reset_index(drop = True)
+    - #df_new = df_new.reset_index(drop = True)
      #df_new
+
+### 5일차 
+  - 그룹 분석하기
+    - describe( ) 함수 : 기초통계
+  
+  - 그룹화하기  
+    - groupby( ) 함수 ["컬럼명"]
+     - 특정 그룹의 데이터 조회 get_group( ) (단, 숫자값이 있는 컬럼에 대해서만 실행됨)
+  - 변수명.groups : 실제 데이터가 어떻게 구성되어 있는지 확인(인덱스 값 추출됨)
+  
+  - 재구조화
+    - cut : 동일한 길이(값의 범위)로 나누기
+    - qcut : 무작위 범위로 범위의 갯수만 설정해주면 알아서 묶어줌
+  - agg( ) 함수 : 변수명.agg(["조회하고싶은컬럼명"])
+  
+  - pd.qcut(df["math"], 3, labels = np.arange(3, 0, -1))
+    - 첫번째값 : 시작값
+    - 두번째값 끝값 -1
+    - 세번째값 : 증가값 or 감소값
+  
+  - One-Hot Encoding
+    - get_dummies( ) 함수
+      -  범주형 컬럼에 대해서만 가능
+      -  범주형이 아닌 컬럼에 대해서는 범주형으로 만들면 가능
+      -  get_dummies() : 숫자값을 제외한 object 데이터 타입만 가능
+      -  해당 원-핫 인코딩 되는 원본 컬럼은 없어지고 
+      -  해당 컬럼명_범주명 으로 컬럼이 만들어진다.
+  - 두개의 데이터를 옆으로 합치는 방법 == concat( ) 함수 사용
+  - 데이터 전치 : 행과 열의 위치를 바꾼다 컬럼-> 행 인덱스로 
+				    행 인덱스번호-> 컬럼명으로 
+      - 데이터프레임.T
+
+
+   
