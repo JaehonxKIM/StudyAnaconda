@@ -181,9 +181,9 @@
   - 히트맵 그리기 
   - 전처리 하기
   - 웹 크롤링
-    - # selenium 설치명령: conda install -c conda-forge selenium
-      # conda로 안될경우 : pip install selenium
-         from selenium import webdriver
+  - selenium 설치명령: conda install -c conda-forge selenium
+  - conda로 안될경우 : pip install selenium
+  - from selenium import webdriver
   - html의 형태 기초
   
 
