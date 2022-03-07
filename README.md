@@ -175,6 +175,16 @@
 ### 9일차
   - 데이터 시각화하기 자습
   - 히트맵 그리기
+
+### 10일차 
+  - 9일차 이어서 학습
+  - 히트맵 그리기 
+  - 전처리 하기
+  - 웹 크롤링
+    - # selenium 설치명령: conda install -c conda-forge selenium
+      # conda로 안될경우 : pip install selenium
+         from selenium import webdriver
+  - html의 형태 기초
   
 
 
