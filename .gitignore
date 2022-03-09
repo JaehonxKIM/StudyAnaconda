@@ -130,3 +130,5 @@ dmypy.json
 files
 files_new
 files_org
+/04_교통데이터분석/01_data_원본
+/04_교통데이터분석/02_data_통합본
