@@ -185,6 +185,10 @@
   - conda로 안될경우 : pip install selenium
   - from selenium import webdriver
   - html의 형태 기초
+
+### 11일차 
+  - 웹크롤링 이어서
+  - 조퇴
   
 
 
