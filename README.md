@@ -198,7 +198,11 @@
     - 채택과 기각은 대립가설을 기준으로 한다
     - p-value = t검정 통계량 + p-value = 1
     - statistic(검정통계량) = 정확도
-  
 
+### 13일차 
+  - KoNLPy nltk Jupyter Notebook 가상환경 설정
+  - Jupyter Notebook에서  WordCloud 해보기
+  - 대통령 취임사 WordCloud 분석하기
+  - 제주 인스타그램 웹크롤링 후 WordCloud 분석 해보기 
 
    
