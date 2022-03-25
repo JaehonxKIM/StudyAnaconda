@@ -203,6 +203,14 @@
   - KoNLPy nltk Jupyter Notebook 가상환경 설정
   - Jupyter Notebook에서  WordCloud 해보기
   - 대통령 취임사 WordCloud 분석하기
-  - 제주 인스타그램 웹크롤링 후 WordCloud 분석 해보기 
+  - 제주 인스타그램 웹크롤링 후 WordCloud 분석 해보기
+
+### 14일차
+  - 회귀분석 데이터 준비
+  - 데이터 탐색
+  - 종속변수와 독립변수관계
+  - 단순회귀분석 학습 및 검증
+    - 다중회귀분석
+    - 다항회귀분석  
 
    
